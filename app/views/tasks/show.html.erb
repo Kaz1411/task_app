@@ -7,11 +7,11 @@
   </tr>
   <tr>
     <th>開始日</th>
-    <td><%= @task.start_day.strftime("%Y年%m月%d日")  %></td>
+    <td><%= @task&.start_day&.strftime("%Y年%m月%d日")  %></td>
   </tr>
   <tr>
     <th>投稿日時</th>
-    <td><%= @task.end_day.strftime("%Y年%m月%d日") %></td>
+    <td><%= @task&.end_day&.strftime("%Y年%m月%d日") %></td>
   </tr>
   <tr>
     <th>終日</th>
