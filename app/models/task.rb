@@ -1,7 +1,7 @@
 class Task < ApplicationRecord
   validates :title,presence: true
   validates :start_day,presence: true
-   validates :end_day,presence: true
+  validates :end_day,presence: true
   validate :date_before_start
   validate :date_before_end
 
